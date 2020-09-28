@@ -1,12 +1,20 @@
+import React from "react";
 import type { AppProps } from "next/app";
-import { ThemeProvider } from "styled-components";
-import { theme } from "../theme";
+import { Navigation } from "../components/Navigation";
+import "../index.css";
+import { PageContainer } from "../components/PageContainer";
 
 function MyApp({ Component, pageProps }: AppProps) {
   return (
-    <ThemeProvider theme={theme}>
-      <Component {...pageProps} />
-    </ThemeProvider>
+    <React.Fragment>
+      <div className="p-4">
+        <Navigation />
+        <PageContainer>
+          <Component {...pageProps} />
+        </PageContainer>
+      </div>
+    </React.Fragment>
   );
 }
+
 export default MyApp;
