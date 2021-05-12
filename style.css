@@ -1,5 +1,5 @@
 :root {
-  --background: #75F9B7;
+  --background: #75f9b7;
   --text: black;
 }
 
@@ -18,5 +18,6 @@ body {
 }
 
 img {
+  height: auto;
   width: 100%;
 }
