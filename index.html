@@ -3,26 +3,97 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home - Ryan Ponce</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Home | Ponce.la</title>
+    <meta name="description" content="Home page of the Ponce family." />
+    <style>
+      /*
+        Josh's Custom CSS Reset
+        https://www.joshwcomeau.com/css/custom-css-reset/
+      */
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+      }
+      * {
+        margin: 0;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        line-height: 1.5;
+        -webkit-font-smoothing: antialiased;
+      }
+      img,
+      picture,
+      video,
+      canvas,
+      svg {
+        display: block;
+        max-width: 100%;
+      }
+      input,
+      button,
+      textarea,
+      select {
+        font: inherit;
+      }
+      p,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        overflow-wrap: break-word;
+      }
+      #root,
+      #__next {
+        isolation: isolate;
+      }
+
+      body {
+        background-color: black;
+        font-family: "Comic Sans MS", "Comic Sans", cursive;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      h1 {
+        color: white;
+        text-align: center;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+      li {
+        font-size: 24px;
+        font-weight: 600;
+      }
+
+      li:nth-child(1) > a {
+        color: green;
+      }
+
+      li:nth-child(2) > a {
+        color: magenta;
+      }
+    </style>
   </head>
   <body>
-    <h1>Ponce.la</h1>
-    <p>
-      <span role="img" aria-label="taco" style="margin-right: 5px">🌮</span>
-      Howdy, I'm Ryan!
-    </p>
-    <p>
-      I'm a software engineer, bike rider, and avid walker. I live Glassell
-      Park, a neighborhood in Los Angeles. Right now, I'm on the front end
-      engineering team at <a href="https://ritual.com">Ritual</a>.
-    </p>
-
-    <h2>Posts</h2>
-
-    <ul>
-      <li><a href="/blog/honeymoon.html">Honeymoon</a></li>
-      <li><a href="/blog/2019-recap.html">2019 Recap</a></li>
-    </ul>
+    <main>
+      <h1>The Ponces</h1>
+      <ul>
+        <li>👨‍💻 <a href="mailto:ryan@ponce.lol">Ryan Ponce 📬</a></li>
+        <li>👩‍🍳 <a href="mailto:sandy@ponce.lol">Sandy Ponce 📬</a></li>
+      </ul>
+    </main>
   </body>
 </html>
